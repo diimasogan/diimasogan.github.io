@@ -109,7 +109,9 @@ h2{font-size:clamp(28px,4vw,40px);line-height:1.15;margin:8px 0 12px;letter-spac
 .proj.feat{grid-column:1/-1;flex-direction:row}
 .proj.feat .shot{flex:1.1;min-height:320px}
 .proj.feat .body{flex:1}
-.proj.omni{--c:var(--omni)}.proj.hr{--c:var(--hr)}.proj.pet{--c:var(--pet)}.proj.fsjs{--c:var(--fsjs)}
+.proj.omni{--c:var(--omni)}.proj.hr{--c:var(--hr)}.proj.pet{--c:var(--pet)}.proj.fsjs{--c:var(--fsjs)}.proj.pbi{--c:#B8860B}
+.pbk{display:grid;grid-template-columns:repeat(3,1fr);gap:6px}.pbk span{background:#14253D;border-radius:6px;padding:6px 7px;font-size:9px;color:#9AAABD}.pbk b{display:block;font-size:12px;color:#fff}
+.pbb{display:grid;gap:5px;margin-top:8px}.pbb i{display:block;height:9px;border-radius:0 4px 4px 0;background:#F2C811}
 .proj.wide{grid-column:1/-1;flex-direction:row}.proj.wide .shot{flex:1;min-height:240px}.proj.wide .body{flex:1.2}
 .fk{background:#14253D;border:1px solid rgba(255,255,255,.08);border-radius:8px;padding:7px 9px;display:grid;gap:5px}
 .fk i{display:block;height:7px;border-radius:4px;background:rgba(255,255,255,.12);font-style:normal}
@@ -253,8 +255,8 @@ footer a{color:#fff}
 
 <div class="wrap">
   <div class="stats rv">
-    <div class="stat"><b>4</b><span data-i18n="st.p">projects</span></div>
-    <div class="stat"><b>4</b><span data-i18n="st.d">live interactive demos</span></div>
+    <div class="stat"><b>5</b><span data-i18n="st.p">projects</span></div>
+    <div class="stat"><b>5</b><span data-i18n="st.d">live interactive demos</span></div>
     <div class="stat"><b>2</b><span data-i18n="st.l">documentation languages (EN · ID)</span></div>
     <div class="stat"><b>26</b><span data-i18n="st.t">agent tools &amp; API endpoints built</span></div>
   </div>
@@ -382,6 +384,26 @@ footer a{color:#fff}
       </div>
     </article>
 
+    <article class="proj wide pbi rv">
+      <div class="shot" aria-hidden="true">
+        <div class="win"><div class="tb"><i></i><i></i><i></i></div><div class="in">
+          <div class="sd"><b class="on"></b><b></b><b></b></div>
+          <div class="mn">
+            <div class="pbk"><span><b>Rp 36.3T</b>net sales</span><span><b>28,127</b>units</span><span><b>29,473</b>cancels</span></div>
+            <div class="pbb"><i style="width:92%"></i><i style="width:84%"></i><i style="width:81%"></i><i style="width:76%"></i><i style="width:68%"></i></div>
+          </div></div></div>
+      </div>
+      <div class="body">
+        <span class="tagline">Power BI · Data visualisation</span>
+        <h3>Sales Report Dashboard</h3>
+        <p data-i18n="pb.p">An interactive property sales report: net sales by province, city, SBU and product type, monthly cancellation trends, plus summary and detail tables with cross-filtering. Originally built in Power BI, rebuilt for the web with anonymized data.</p>
+        <div class="links">
+          <a class="lk main" href="https://diimasogan.github.io/PowerBI-SalesReport-Dashboard/"><svg><use href="#i-play"/></svg>Live demo</a>
+          <a class="lk" href="https://github.com/diimasogan/PowerBI-SalesReport-Dashboard"><svg><use href="#i-gh"/></svg>Code</a>
+        </div>
+      </div>
+    </article>
+
   </div>
 </div></section>
 
@@ -467,6 +489,7 @@ footer a{color:#fff}
   "hr.k3": "Khusus",
   "hr.p": "AI agent cuti karyawan yang dwibahasa. Izin akses dan 9 aturan kebijakan ditegakkan di Boomi — tahan terhadap prompt injection.",
   "pt.p": "Endpoint mock kompatibel Swagger Petstore dengan konsol interaktif yang menyorot jalur proses Boomi setiap request.",
+  "pb.p": "Laporan penjualan properti interaktif: net sales per provinsi, kota, SBU, dan tipe produk, tren pembatalan bulanan, plus tabel ringkasan dan detail dengan cross-filter. Awalnya dibuat di Power BI, lalu dibangun ulang untuk web dengan data yang dianonimkan.",
   "fs.p": "REST API dengan Express, Prisma, dan MySQL, plus aplikasi React untuk registrasi, login JWT, dan manajemen user (CRUD). Demo live menjalankan aplikasi React aslinya dengan backend yang disimulasikan di browser.",
   "ct.eye": "Kontak",
   "ct.h": "Mari terhubung",
