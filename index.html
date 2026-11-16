@@ -114,6 +114,22 @@ h2{font-size:clamp(28px,4vw,40px);line-height:1.15;margin:8px 0 12px;letter-spac
 .courses a{display:flex;flex-direction:column;gap:2px;text-decoration:none;font-size:14px;font-weight:600;padding:10px 14px;border:1px solid var(--line);border-radius:12px;background:var(--surface-2)}
 .courses a:hover{border-color:var(--brand)}
 .courses em{font-style:normal;font-size:12.5px;font-weight:500;color:var(--muted)}
+/* experience timeline */
+.tl{list-style:none;margin:0;padding:0 0 0 30px;position:relative;display:grid;gap:14px}
+.tl::before{content:"";position:absolute;left:8px;top:22px;bottom:22px;width:2px;background:var(--line)}
+.job{position:relative;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:18px 22px;box-shadow:var(--shadow)}
+.job::before{content:"";position:absolute;left:-28px;top:22px;width:14px;height:14px;border-radius:50%;background:var(--surface);border:3px solid var(--line)}
+.job:first-child::before{border-color:var(--brand);background:var(--brand)}
+.jh{display:flex;justify-content:space-between;align-items:baseline;gap:6px 16px;flex-wrap:wrap}
+.jh b{font-size:17px}
+.jd{font-size:13.5px;font-weight:600;color:var(--muted);white-space:nowrap}
+.jc{font-size:14.5px;font-weight:700;color:var(--brand-ink);margin-top:2px}
+.jc span{font-weight:500;color:var(--muted)}
+.job p{margin:8px 0 0;color:var(--muted);font-size:15px}
+.tl-more{margin:16px 0 0}
+.tl-more a{display:inline-flex;align-items:center;gap:8px;font-weight:700;font-size:14.5px;text-decoration:none;color:var(--brand-ink)}
+.tl-more a:hover{text-decoration:underline}
+.tl-more svg{width:16px;height:16px}
 /* testimonials */
 .testis{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
 .testi{margin:0;display:flex;flex-direction:column;gap:18px;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:24px;box-shadow:var(--shadow)}
@@ -229,9 +245,9 @@ footer a{color:#fff}
   .proj.feat,.proj.wide{flex-direction:column}
   .proj.feat .shot{min-height:220px}
   .connect{grid-template-columns:repeat(2,1fr)}
+  .bar nav a:not(.keep){display:none}
 }
 @media (max-width:560px){
-  .bar nav a:not(.keep){display:none}
   .bar .wrap{gap:8px}
   .bar nav{gap:2px}
   .bar nav a{padding:6px 9px;font-size:14px}
@@ -270,7 +286,7 @@ footer a{color:#fff}
 <header class="bar"><div class="wrap">
   <a class="mono" href="#top"><i>DP</i><span>diimasogan</span></a>
   <nav aria-label="Main">
-    <a href="#skills" data-i18n="nav.skills">Skills</a><a href="#certifications" data-i18n="nav.certs">Certifications</a><a href="#projects" class="keep" data-i18n="nav.projects">Projects</a><a href="#contact" class="keep" data-i18n="nav.contact">Contact</a>
+    <a href="#skills" data-i18n="nav.skills">Skills</a><a href="#experience" data-i18n="nav.exp">Experience</a><a href="#certifications" data-i18n="nav.certs">Certifications</a><a href="#projects" class="keep" data-i18n="nav.projects">Projects</a><a href="#contact" class="keep" data-i18n="nav.contact">Contact</a>
   </nav>
   <button class="lang" id="lang" type="button" aria-label="Ganti ke Bahasa Indonesia" title="Bahasa Indonesia">ID</button>
   <button class="theme" id="theme" aria-label="Toggle theme" title="Toggle theme"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg></button>
@@ -331,6 +347,30 @@ footer a{color:#fff}
       <h3 data-i18n="sk.3h">Data &amp; Dashboards</h3><p data-i18n="sk.3">Turning operational data into dashboards that support decisions.</p>
       <div class="chips"><span>Power BI</span><span>DAX</span><span>Data modeling</span><span>SQL</span></div></div>
   </div>
+</div></section>
+
+<section id="experience"><div class="wrap">
+  <div class="eyebrow" data-i18n="ex.eye">Experience</div>
+  <h2 data-i18n="ex.h">Where I've worked</h2>
+  <p class="sub" data-i18n="ex.sub">Five years delivering integration and BI for banks and enterprises in Indonesia.</p>
+  <ol class="tl">
+    <li class="job rv">
+      <div class="jh"><b>Technical Lead · Axway MFT &amp; Power BI</b><span class="jd" data-i18n="ex.1d">Jul 2025 – Present</span></div>
+      <div class="jc">NTT DATA <span>· Bank Indonesia, Sinar Mas Land, PT Vale Indonesia</span></div>
+      <p data-i18n="ex.1p">Lead the enterprise Axway MFT platform for Indonesia's central bank, and a team of 8 BI analysts and developers delivering Power BI dashboards and data governance.</p>
+    </li>
+    <li class="job rv">
+      <div class="jh"><b>Associate Software Applications Development Engineer</b><span class="jd">Sep 2022 – Jul 2025</span></div>
+      <div class="jc">NTT DATA <span>· QNB Bank, Permata Bank, Pefindo</span></div>
+      <p data-i18n="ex.2p">Installed, integrated and supported the Axway API and MFT suite for banks: about 150,000 file transfers per month and 10 API catalogs delivered, plus presales demos.</p>
+    </li>
+    <li class="job rv">
+      <div class="jh"><b>Junior API Developer</b><span class="jd">Oct 2021 – Sep 2022</span></div>
+      <div class="jc">Sigmatech <span>· WOM Finance</span></div>
+      <p data-i18n="ex.3p">Built and deployed .NET Web APIs and SQL Server procedures and reports for a multifinance company.</p>
+    </li>
+  </ol>
+  <p class="tl-more"><a href="cv/Dimas_Agung_Prakasa_CV.pdf" download><svg><use href="#i-dl"/></svg><span data-i18n="ex.more">Full details in my CV</span></a></p>
 </div></section>
 
 <section id="certifications"><div class="wrap">
@@ -569,6 +609,15 @@ footer a{color:#fff}
   "ce.valid": "berlaku sampai",
   "ce.verify": "Verifikasi",
   "ce.courses": "Kursus",
+  "nav.exp": "Pengalaman",
+  "ex.eye": "Pengalaman",
+  "ex.h": "Tempat saya bekerja",
+  "ex.sub": "Lima tahun mengerjakan integrasi dan BI untuk bank dan perusahaan di Indonesia.",
+  "ex.1d": "Jul 2025 – Sekarang",
+  "ex.1p": "Memimpin platform Axway MFT enterprise untuk bank sentral Indonesia, serta tim berisi 8 BI analyst dan developer yang membangun dashboard Power BI dan tata kelola data.",
+  "ex.2p": "Instalasi, integrasi, dan dukungan Axway API dan MFT untuk perbankan: sekitar 150.000 file transfer per bulan dan 10 katalog API, ditambah demo presales.",
+  "ex.3p": "Membangun dan men-deploy Web API .NET serta prosedur dan laporan SQL Server untuk perusahaan pembiayaan.",
+  "ex.more": "Detail lengkap ada di CV saya",
   "ts.eye": "Testimoni",
   "ts.h": "Kata rekan kerja",
   "ts.sub": "Rekomendasi dari orang-orang yang pernah bekerja dengan saya, dikutip dari LinkedIn.",
