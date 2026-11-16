@@ -18,7 +18,7 @@
 :root{
   --bg:#F5F7FB; --bg-2:#EAF0F7; --surface:#FFFFFF; --surface-2:#F0F4F9; --ink:#0D1B2E; --muted:#58677C; --line:#DCE4EE;
   --brand:#13A89E; --brand-ink:#0B7F77; --brand-soft:rgba(19,168,158,.12); --hero-a:#0B1B33; --hero-b:#123156;
-  --omni:#13A89E; --hr:#5B5BD6; --pet:#D9631E;
+  --omni:#13A89E; --hr:#5B5BD6; --pet:#D9631E; --fsjs:#0E8AC0;
   --shadow:0 1px 2px rgba(13,27,46,.05),0 10px 30px -12px rgba(13,27,46,.18); --radius:20px;
   color-scheme:light;
 }
@@ -106,7 +106,13 @@ h2{font-size:clamp(28px,4vw,40px);line-height:1.15;margin:8px 0 12px;letter-spac
 .proj.feat{grid-column:1/-1;flex-direction:row}
 .proj.feat .shot{flex:1.1;min-height:320px}
 .proj.feat .body{flex:1}
-.proj.omni{--c:var(--omni)}.proj.hr{--c:var(--hr)}.proj.pet{--c:var(--pet)}
+.proj.omni{--c:var(--omni)}.proj.hr{--c:var(--hr)}.proj.pet{--c:var(--pet)}.proj.fsjs{--c:var(--fsjs)}
+.proj.wide{grid-column:1/-1;flex-direction:row}.proj.wide .shot{flex:1;min-height:240px}.proj.wide .body{flex:1.2}
+.fk{background:#14253D;border:1px solid rgba(255,255,255,.08);border-radius:8px;padding:7px 9px;display:grid;gap:5px}
+.fk i{display:block;height:7px;border-radius:4px;background:rgba(255,255,255,.12);font-style:normal}
+.fk .b{height:16px;border-radius:5px;background:var(--c)}
+.rows{display:grid;gap:4px}.rows div{display:flex;justify-content:space-between;gap:6px;background:#14253D;border-radius:6px;padding:4px 7px}
+.rows em{font-style:normal;font-size:9px;font-weight:800;padding:0 5px;border-radius:4px;background:#0E3326;color:#4CC98C}.rows em.d{background:#41161C;color:#FF7A86}
 .shot{position:relative;min-height:200px;background:radial-gradient(500px 220px at 80% 0%,color-mix(in srgb,var(--c) 35%,transparent),transparent 70%),linear-gradient(160deg,#0C1A2E,#152B48);display:grid;place-items:center;padding:22px}
 .body{padding:24px 24px 26px;display:flex;flex-direction:column}
 .tagline{display:inline-flex;align-items:center;gap:6px;font-size:12.5px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:var(--c)}
@@ -177,7 +183,7 @@ footer a{color:#fff}
   .stats{grid-template-columns:repeat(2,1fr)}
   .skills{grid-template-columns:1fr}
   .projects{grid-template-columns:1fr}
-  .proj.feat{flex-direction:column}
+  .proj.feat,.proj.wide{flex-direction:column}
   .proj.feat .shot{min-height:220px}
   .connect{grid-template-columns:repeat(2,1fr)}
 }
@@ -243,10 +249,10 @@ footer a{color:#fff}
 
 <div class="wrap">
   <div class="stats rv">
-    <div class="stat"><b>3</b><span>project integrasi</span></div>
-    <div class="stat"><b>3</b><span>demo interaktif online</span></div>
+    <div class="stat"><b>4</b><span>project</span></div>
+    <div class="stat"><b>4</b><span>demo interaktif online</span></div>
     <div class="stat"><b>2</b><span>bahasa dokumentasi (EN · ID)</span></div>
-    <div class="stat"><b>19</b><span>agent tool &amp; endpoint API dibangun</span></div>
+    <div class="stat"><b>26</b><span>agent tool &amp; endpoint API dibangun</span></div>
   </div>
 </div>
 
@@ -260,7 +266,7 @@ footer a{color:#fff}
       <div class="chips"><span>Axway SecureTransport</span><span>Axway API Management</span><span>SFTP · HTTPS</span><span>PKI</span></div></div>
     <div class="skill rv"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/><path d="M10 6.5h4a3 3 0 0 1 3 3V14"/></svg></div>
       <h3>Integrasi &amp; AI Agent</h3><p>Proses Boomi, Web Services, dan AI agent dengan guardrail yang ditegakkan di server.</p>
-      <div class="chips"><span>Boomi Integration</span><span>Boomi Agentstudio</span><span>REST · OpenAPI</span><span>MCP</span><span>Python</span></div></div>
+      <div class="chips"><span>Boomi Integration</span><span>Boomi Agentstudio</span><span>REST · OpenAPI</span><span>MCP</span><span>Python</span><span>Node.js · Express</span><span>React</span></div></div>
     <div class="skill rv"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg></div>
       <h3>Data &amp; Dashboard</h3><p>Mengubah data operasional menjadi dashboard yang membantu keputusan.</p>
       <div class="chips"><span>Power BI</span><span>DAX</span><span>Data modeling</span><span>SQL</span></div></div>
@@ -346,6 +352,28 @@ footer a{color:#fff}
           <a class="lk" href="https://diimasogan.github.io/PetStore-MockAPI/docs/PetStore-Mock-API-Documentation.html"><svg><use href="#i-doc"/></svg>Docs (EN)</a>
           <a class="lk" href="https://diimasogan.github.io/PetStore-MockAPI/docs/id/PetStore-Mock-API-Dokumentasi.html"><svg><use href="#i-doc"/></svg>Dokumentasi (ID)</a>
           <a class="lk" href="https://github.com/diimasogan/PetStore-MockAPI"><svg><use href="#i-gh"/></svg>Code</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="proj wide fsjs rv">
+      <div class="shot" aria-hidden="true">
+        <div class="win"><div class="tb"><i></i><i></i><i></i></div><div class="in">
+          <div class="sd"><b class="on"></b><b></b><b></b></div>
+          <div class="mn">
+            <div class="fk"><span style="font-weight:800;color:#fff">LOGIN</span><i></i><i style="width:70%"></i><span class="b"></span></div>
+            <div class="rows"><div><span>Admin Demo</span><span><em>EDIT</em> <em class="d">DELETE</em></span></div><div><span>Siti Rahma</span><span><em>EDIT</em> <em class="d">DELETE</em></span></div></div>
+          </div></div></div>
+      </div>
+      <div class="body">
+        <span class="tagline">Full-stack JavaScript · Express × React</span>
+        <h3>FullStackJS Express + React</h3>
+        <p>REST API dengan Express, Prisma, dan MySQL, plus aplikasi React untuk registrasi, login JWT, dan manajemen user (CRUD). Demo live menjalankan aplikasi React aslinya dengan backend yang disimulasikan di browser.</p>
+        <div class="links">
+          <a class="lk main" href="https://diimasogan.github.io/FullStackJS-ExpressReact-Beginner/"><svg><use href="#i-play"/></svg>Live demo</a>
+          <a class="lk" href="https://diimasogan.github.io/FullStackJS-ExpressReact-Beginner/docs/FullStackJS-Documentation.html"><svg><use href="#i-doc"/></svg>Docs (EN)</a>
+          <a class="lk" href="https://diimasogan.github.io/FullStackJS-ExpressReact-Beginner/docs/id/FullStackJS-Dokumentasi.html"><svg><use href="#i-doc"/></svg>Dokumentasi (ID)</a>
+          <a class="lk" href="https://github.com/diimasogan/FullStackJS-ExpressReact-Beginner"><svg><use href="#i-gh"/></svg>Code</a>
         </div>
       </div>
     </article>
