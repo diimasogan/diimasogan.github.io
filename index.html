@@ -96,6 +96,24 @@ h2{font-size:clamp(28px,4vw,40px);line-height:1.15;margin:8px 0 12px;letter-spac
 
 /* skills */
 .skills{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+/* certifications: vendor certs prominent, courses secondary */
+.certs{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+.cert{--c:#0B6FB8;position:relative;display:flex;align-items:center;gap:16px;text-decoration:none;background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--c);border-radius:var(--radius);padding:20px 22px;box-shadow:var(--shadow);transition:transform .15s,border-color .15s}
+.cert:hover{transform:translateY(-2px);border-color:var(--c)}
+.cert .seal{flex:none;width:52px;height:52px;border-radius:14px;display:grid;place-items:center;background:color-mix(in srgb,var(--c) 14%,transparent);color:var(--c)}
+.cert .seal svg{width:28px;height:28px}
+.cert .ct{display:flex;flex-direction:column;gap:2px;min-width:0}
+.cert .lvl{font-size:12px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--c)}
+.cert b{font-size:18px;line-height:1.3}
+.cert .dt{font-size:13.5px;color:var(--muted)}
+.cert .vf{margin-left:auto;flex:none;font-size:13.5px;font-weight:700;color:var(--c);border:1px solid color-mix(in srgb,var(--c) 40%,var(--line));border-radius:999px;padding:5px 12px;white-space:nowrap}
+:root[data-theme="dark"] .cert{--c:#5AB0F0}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .cert{--c:#5AB0F0}}
+.courses-h{margin:28px 0 10px;font-size:13px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.courses{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.courses a{display:flex;flex-direction:column;gap:2px;text-decoration:none;font-size:14px;font-weight:600;padding:10px 14px;border:1px solid var(--line);border-radius:12px;background:var(--surface-2)}
+.courses a:hover{border-color:var(--brand)}
+.courses em{font-style:normal;font-size:12.5px;font-weight:500;color:var(--muted)}
 .skill{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:22px;box-shadow:var(--shadow)}
 .skill .ic{width:44px;height:44px;border-radius:12px;display:grid;place-items:center;background:var(--brand-soft);color:var(--brand-ink);margin-bottom:14px}
 .skill .ic svg{width:22px;height:22px}
@@ -191,6 +209,7 @@ footer a{color:#fff}
   .bf1{left:-14%}.bf2{right:-18%}
   .stats{grid-template-columns:repeat(2,1fr)}
   .skills{grid-template-columns:1fr}
+  .certs,.courses{grid-template-columns:1fr}
   .projects{grid-template-columns:1fr}
   .proj.feat,.proj.wide{flex-direction:column}
   .proj.feat .shot{min-height:220px}
@@ -202,6 +221,9 @@ footer a{color:#fff}
   .bar nav{gap:2px}
   .bar nav a{padding:6px 9px;font-size:14px}
   .cta .btn{flex:1 1 100%;justify-content:center}
+  .cert{flex-wrap:wrap;padding:18px}
+  .cert .ct{flex:1 1 calc(100% - 68px)}
+  .cert .vf{margin-left:68px}
   .connect,.connect.direct{grid-template-columns:1fr}
   .badge-float{font-size:11.5px;padding:6px 9px}
   .bf2{right:-6%}.bf1{left:-6%}
@@ -223,6 +245,7 @@ footer a{color:#fff}
   <symbol id="i-lt" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M12 3v18M4.2 7.5l15.6 9M4.2 16.5l15.6-9"/></g></symbol>
   <symbol id="i-arrow" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" d="M7 17 17 7M8 7h9v9"/></symbol>
   <symbol id="i-doc" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M5 3h10l4 4v14H5z"/><path d="M14 3v5h5M8 13h8M8 17h5"/></g></symbol>
+  <symbol id="i-award" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="9" r="6"/><path d="m9.5 9 1.8 1.8L15 7.2"/><path d="M8.5 14.2 7 22l5-3 5 3-1.5-7.8"/></g></symbol>
   <symbol id="i-dl" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v11m-5-5 5 5 5-5M5 20h14"/></g></symbol>
 <symbol id="i-wa" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 20.5l1.3-4.2A8.5 8.5 0 1 1 8 19.3z"/><path d="M9 8.6c0 3.3 3.1 6.4 6.4 6.4l1.1-1.6-2-1-.9.8c-1-.4-1.9-1.3-2.3-2.3l.8-.9-1-2z" fill="currentColor" stroke-width="1"/></g></symbol>
 <symbol id="i-mail" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></g></symbol>
@@ -232,7 +255,7 @@ footer a{color:#fff}
 <header class="bar"><div class="wrap">
   <a class="mono" href="#top"><i>DP</i><span>diimasogan</span></a>
   <nav aria-label="Main">
-    <a href="#skills" data-i18n="nav.skills">Skills</a><a href="#projects" class="keep" data-i18n="nav.projects">Projects</a><a href="#contact" class="keep" data-i18n="nav.contact">Contact</a>
+    <a href="#skills" data-i18n="nav.skills">Skills</a><a href="#certifications" data-i18n="nav.certs">Certifications</a><a href="#projects" class="keep" data-i18n="nav.projects">Projects</a><a href="#contact" class="keep" data-i18n="nav.contact">Contact</a>
   </nav>
   <button class="lang" id="lang" type="button" aria-label="Ganti ke Bahasa Indonesia" title="Bahasa Indonesia">ID</button>
   <button class="theme" id="theme" aria-label="Toggle theme" title="Toggle theme"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg></button>
@@ -293,6 +316,38 @@ footer a{color:#fff}
       <h3 data-i18n="sk.3h">Data &amp; Dashboards</h3><p data-i18n="sk.3">Turning operational data into dashboards that support decisions.</p>
       <div class="chips"><span>Power BI</span><span>DAX</span><span>Data modeling</span><span>SQL</span></div></div>
   </div>
+</div></section>
+
+<section id="certifications"><div class="wrap">
+  <div class="eyebrow" data-i18n="ce.eye">Certifications</div>
+  <h2 data-i18n="ce.h">Certified on the platforms I deliver</h2>
+  <p class="sub" data-i18n="ce.sub">Official vendor certifications, each verifiable online.</p>
+  <div class="certs">
+    <a class="cert rv" href="https://verify.skilljar.com/c/v2se367urukh" target="_blank" rel="noopener">
+      <span class="seal" aria-hidden="true"><svg><use href="#i-award"/></svg></span>
+      <span class="ct">
+        <span class="lvl">Boomi · Professional</span>
+        <b>Professional Integration Developer</b>
+        <span class="dt"><span data-i18n="ce.issued">Issued</span> Jun 2026 · <span data-i18n="ce.valid">valid until</span> Jun 2028</span>
+      </span>
+      <span class="vf"><span data-i18n="ce.verify">Verify</span> ↗</span>
+    </a>
+    <a class="cert rv" href="https://verify.skilljar.com/c/mex824abth5g" target="_blank" rel="noopener">
+      <span class="seal" aria-hidden="true"><svg><use href="#i-award"/></svg></span>
+      <span class="ct">
+        <span class="lvl">Boomi · Associate</span>
+        <b>Associate Integration Developer</b>
+        <span class="dt"><span data-i18n="ce.issued">Issued</span> May 2026 · <span data-i18n="ce.valid">valid until</span> May 2031</span>
+      </span>
+      <span class="vf"><span data-i18n="ce.verify">Verify</span> ↗</span>
+    </a>
+  </div>
+  <h3 class="courses-h" data-i18n="ce.courses">Courses</h3>
+  <ul class="courses">
+    <li><a href="https://ude.my/UC-09725370-11ce-4dfd-b25f-3ee53e2102a4" target="_blank" rel="noopener"><span>Mastering ASP.NET Core MVC From Scratch Using C#</span><em>Udemy · May 2024 ↗</em></a></li>
+    <li><a href="https://ude.my/UC-3ffa5853-fa7b-4a1a-b07e-890b7a88bac5" target="_blank" rel="noopener"><span>Database MySQL: Beginner to Advanced</span><em>Udemy · May 2024 ↗</em></a></li>
+    <li><a href="https://ude.my/UC-41283fcd-bdf1-4bea-b918-a6fdaf16c788" target="_blank" rel="noopener"><span>Complete Linux Training Course</span><em>Udemy · May 2024 ↗</em></a></li>
+  </ul>
 </div></section>
 
 <section id="projects"><div class="wrap">
@@ -469,6 +524,14 @@ footer a{color:#fff}
   /* language: English is the default; Indonesian is optional and remembered per visitor */
   var ID = {
   "nav.skills": "Keahlian",
+  "nav.certs": "Sertifikasi",
+  "ce.eye": "Sertifikasi",
+  "ce.h": "Tersertifikasi di platform yang saya kerjakan",
+  "ce.sub": "Sertifikasi resmi dari vendor, semuanya bisa diverifikasi online.",
+  "ce.issued": "Terbit",
+  "ce.valid": "berlaku sampai",
+  "ce.verify": "Verifikasi",
+  "ce.courses": "Kursus",
   "nav.projects": "Project",
   "nav.contact": "Kontak",
   "hero.open": "Terbuka untuk kolaborasi &amp; konsultasi",
