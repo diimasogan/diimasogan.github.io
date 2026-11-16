@@ -114,6 +114,21 @@ h2{font-size:clamp(28px,4vw,40px);line-height:1.15;margin:8px 0 12px;letter-spac
 .courses a{display:flex;flex-direction:column;gap:2px;text-decoration:none;font-size:14px;font-weight:600;padding:10px 14px;border:1px solid var(--line);border-radius:12px;background:var(--surface-2)}
 .courses a:hover{border-color:var(--brand)}
 .courses em{font-style:normal;font-size:12.5px;font-weight:500;color:var(--muted)}
+/* testimonials */
+.testis{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.testi{margin:0;display:flex;flex-direction:column;gap:18px;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:24px;box-shadow:var(--shadow)}
+.testi blockquote{margin:0;font-size:15.5px;line-height:1.65;color:var(--ink);position:relative;padding-top:26px}
+.testi blockquote::before{content:"“";position:absolute;top:-14px;left:-2px;font-size:56px;line-height:1;font-weight:800;color:var(--brand)}
+.testi figcaption{margin-top:auto;display:flex;gap:12px;align-items:center;border-top:1px solid var(--line);padding-top:16px}
+.testi .av{flex:none;width:42px;height:42px;border-radius:50%;display:grid;place-items:center;font-weight:800;font-size:14px;color:#fff;background:linear-gradient(135deg,var(--brand),#2a78d6)}
+.testi figcaption>span:last-child{display:flex;flex-direction:column;min-width:0}
+.testi figcaption b{font-size:15px}
+.testi figcaption span span{font-size:13px;color:var(--muted)}
+.testi figcaption em{font-style:normal;font-size:12.5px;color:var(--brand-ink);font-weight:600}
+.testi-more{margin:18px 0 0}
+.testi-more a{display:inline-flex;align-items:center;gap:8px;font-weight:700;font-size:14.5px;text-decoration:none;color:var(--brand-ink)}
+.testi-more a:hover{text-decoration:underline}
+.testi-more svg{width:16px;height:16px}
 .skill{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:22px;box-shadow:var(--shadow)}
 .skill .ic{width:44px;height:44px;border-radius:12px;display:grid;place-items:center;background:var(--brand-soft);color:var(--brand-ink);margin-bottom:14px}
 .skill .ic svg{width:22px;height:22px}
@@ -209,7 +224,7 @@ footer a{color:#fff}
   .bf1{left:-14%}.bf2{right:-18%}
   .stats{grid-template-columns:repeat(2,1fr)}
   .skills{grid-template-columns:1fr}
-  .certs,.courses{grid-template-columns:1fr}
+  .certs,.courses,.testis{grid-template-columns:1fr}
   .projects{grid-template-columns:1fr}
   .proj.feat,.proj.wide{flex-direction:column}
   .proj.feat .shot{min-height:220px}
@@ -481,6 +496,27 @@ footer a{color:#fff}
   </div>
 </div></section>
 
+<section id="testimonials"><div class="wrap">
+  <div class="eyebrow" data-i18n="ts.eye">Testimonials</div>
+  <h2 data-i18n="ts.h">What colleagues say</h2>
+  <p class="sub" data-i18n="ts.sub">Recommendations from people I have worked with, quoted from LinkedIn.</p>
+  <div class="testis">
+    <figure class="testi rv">
+      <blockquote>As the Technical Leader, he demonstrated strong expertise in Power BI, data modeling, and BI solution design while leading the team effectively. […] His technical leadership and collaborative approach played a key role in the project's success.</blockquote>
+      <figcaption><span class="av" aria-hidden="true">HS</span><span><b>Hadi Saputra</b><span>Data Analyst · Power BI Engineer</span><em data-i18n="ts.r1">Team member, Sinar Mas Land Power BI project · Jul 2026</em></span></figcaption>
+    </figure>
+    <figure class="testi rv">
+      <blockquote>He consistently shares his knowledge with the team and has the potential to be a good mentor. As a professional engineer, Dimas will undoubtedly bring his best effort to your organization.</blockquote>
+      <figcaption><span class="av" aria-hidden="true">LT</span><span><b>Lily Tarigan</b><span>Incharge, Bank Indonesia account · NTT DATA</span><em data-i18n="ts.r2">Same team at NTT DATA · Jul 2024</em></span></figcaption>
+    </figure>
+    <figure class="testi rv">
+      <blockquote>Dimas is a diligent individual with a keen interest in problem-solving. It is enjoyable to work with him, as he consistently brings dedication and focus to every task.</blockquote>
+      <figcaption><span class="av" aria-hidden="true">MA</span><span><b>Muhammad Aditya</b><span>Software Engineer</span><em data-i18n="ts.r3">Mentor · Jun 2024</em></span></figcaption>
+    </figure>
+  </div>
+  <p class="testi-more"><a href="https://www.linkedin.com/in/dimasagungprakasa/details/recommendations/" target="_blank" rel="noopener"><svg><use href="#i-li"/></svg><span data-i18n="ts.more">Read the full recommendations on LinkedIn</span> ↗</a></p>
+</div></section>
+
 <section id="contact"><div class="wrap">
   <div class="eyebrow" data-i18n="ct.eye">Contact</div>
   <h2 data-i18n="ct.h">Let’s connect</h2>
@@ -533,6 +569,13 @@ footer a{color:#fff}
   "ce.valid": "berlaku sampai",
   "ce.verify": "Verifikasi",
   "ce.courses": "Kursus",
+  "ts.eye": "Testimoni",
+  "ts.h": "Kata rekan kerja",
+  "ts.sub": "Rekomendasi dari orang-orang yang pernah bekerja dengan saya, dikutip dari LinkedIn.",
+  "ts.r1": "Anggota tim, project Power BI Sinar Mas Land · Jul 2026",
+  "ts.r2": "Satu tim di NTT DATA · Jul 2024",
+  "ts.r3": "Mentor · Jun 2024",
+  "ts.more": "Baca rekomendasi lengkapnya di LinkedIn",
   "nav.projects": "Project",
   "nav.contact": "Kontak",
   "hero.open": "Terbuka untuk kolaborasi &amp; konsultasi",
