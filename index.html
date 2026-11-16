@@ -1,12 +1,12 @@
 <!doctype html>
-<html lang="id">
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Dimas Agung Prakasa · Integration Portfolio</title>
-<meta name="description" content="Technical Consultant — Integration Specialist, Boomi integration dan AI agent, Power BI Developer. Portofolio project dan demo interaktif.">
-<meta property="og:title" content="Dimas Agung Prakasa · Integration Portfolio">
-<meta property="og:description" content="Project integrasi enterprise: Managed File Transfer, Boomi, AI agent, dan API — lengkap dengan demo interaktif dan dokumentasi.">
+<title>Dimas Agung Prakasa · Integration Specialist Portfolio</title>
+<meta name="description" content="Dimas Agung Prakasa — Technical Consultant and Integration Specialist: Managed File Transfer (Axway SecureTransport), API integration, Boomi iPaaS and AI agents, Power BI. Projects with live demos and documentation.">
+<meta property="og:title" content="Dimas Agung Prakasa · Integration Specialist Portfolio">
+<meta property="og:description" content="Enterprise integration projects — Managed File Transfer, Boomi, AI agents and APIs — with interactive demos and documentation.">
 <meta property="og:image" content="https://avatars.githubusercontent.com/u/52793623?v=4">
 <meta property="og:url" content="https://diimasogan.github.io/">
 <meta name="theme-color" content="#0B1B33">
@@ -46,6 +46,9 @@ img{display:block;max-width:100%}
 .bar nav a:hover{color:#fff;background:rgba(255,255,255,.08)}
 .theme{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.14);color:#fff;border-radius:999px;width:36px;height:36px;display:grid;place-items:center;cursor:pointer}
 .theme svg{width:17px;height:17px}
+.lang{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.14);color:#fff;border-radius:999px;height:36px;min-width:44px;padding:0 10px;font:700 12.5px/1 inherit;letter-spacing:.06em;cursor:pointer}
+.lang:hover,.theme:hover{background:rgba(255,255,255,.16)}
+.hero h1 .plain{background:none;-webkit-background-clip:border-box;background-clip:border-box;color:#fff}
 
 /* hero */
 .hero{position:relative;overflow:hidden;color:#fff;background:radial-gradient(1200px 500px at 85% -10%,rgba(19,168,158,.35),transparent 60%),radial-gradient(900px 500px at -10% 110%,rgba(91,91,214,.35),transparent 60%),linear-gradient(160deg,var(--hero-a),var(--hero-b))}
@@ -212,24 +215,25 @@ footer a{color:#fff}
 
 <header class="bar"><div class="wrap">
   <a class="mono" href="#top"><i>DP</i><span>diimasogan</span></a>
-  <nav aria-label="Navigasi">
-    <a href="#keahlian">Keahlian</a><a href="#project" class="keep">Project</a><a href="#kontak" class="keep">Kontak</a>
+  <nav aria-label="Main">
+    <a href="#skills" data-i18n="nav.skills">Skills</a><a href="#projects" class="keep" data-i18n="nav.projects">Projects</a><a href="#contact" class="keep" data-i18n="nav.contact">Contact</a>
   </nav>
-  <button class="theme" id="theme" aria-label="Ganti tema" title="Ganti tema"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg></button>
+  <button class="lang" id="lang" type="button" aria-label="Ganti ke Bahasa Indonesia" title="Bahasa Indonesia">ID</button>
+  <button class="theme" id="theme" aria-label="Toggle theme" title="Toggle theme"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg></button>
 </div></header>
 
 <main id="top">
 <section class="hero" style="padding:0"><div class="wrap">
   <div>
-    <span class="hello"><b></b>Terbuka untuk kolaborasi &amp; konsultasi</span>
-    <h1>Halo, saya <span>Dimas Agung Prakasa</span></h1>
+    <span class="hello"><b></b><span data-i18n="hero.open">Open to new opportunities &amp; collaboration</span></span>
+    <h1><span class="plain" data-i18n="hero.hi">Hi, I’m</span> <span>Dimas Agung Prakasa</span></h1>
     <p class="role">Technical Consultant · Integration Specialist · Power BI Developer</p>
-    <p class="intro">Saya membangun integrasi enterprise yang aman dan mudah dipakai — dari Managed File Transfer dan API, orkestrasi di Boomi, sampai AI agent yang bisa diajak bicara dan dashboard data.</p>
+    <p class="intro" data-i18n="hero.intro">I build secure, easy-to-use enterprise integrations — from Managed File Transfer and APIs, to orchestration in Boomi, conversational AI agents and data dashboards.</p>
     <div class="cta">
-      <a class="btn primary" href="#project">Lihat project <svg><use href="#i-arrow"/></svg></a>
-      <a class="btn ghost" href="https://www.linkedin.com/in/dimasagungprakasa/" target="_blank" rel="noopener"><svg><use href="#i-li"/></svg>Terhubung di LinkedIn</a>
+      <a class="btn primary" href="#projects"><span data-i18n="hero.cta">View projects</span> <svg><use href="#i-arrow"/></svg></a>
+      <a class="btn ghost" href="https://www.linkedin.com/in/dimasagungprakasa/" target="_blank" rel="noopener"><svg><use href="#i-li"/></svg><span data-i18n="hero.li">Connect on LinkedIn</span></a>
     </div>
-    <div class="socials" aria-label="Sosial media">
+    <div class="socials" aria-label="Social media">
       <a class="soc" href="https://github.com/diimasogan" target="_blank" rel="noopener" aria-label="GitHub" title="GitHub"><svg><use href="#i-gh"/></svg></a>
       <a class="soc" href="https://www.linkedin.com/in/dimasagungprakasa/" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn"><svg><use href="#i-li"/></svg></a>
       <a class="soc" href="https://www.youtube.com/@diimas_ogan" target="_blank" rel="noopener" aria-label="YouTube" title="YouTube"><svg><use href="#i-yt"/></svg></a>
@@ -240,7 +244,7 @@ footer a{color:#fff}
   </div>
   <div class="portrait">
     <div class="ring"></div>
-    <img src="https://avatars.githubusercontent.com/u/52793623?v=4&s=460" alt="Foto Dimas Agung Prakasa" width="312" height="312">
+    <img src="https://avatars.githubusercontent.com/u/52793623?v=4&s=460" alt="Photo of Dimas Agung Prakasa" width="312" height="312">
     <div class="badge-float bf1"><i style="background:#13A89E"></i>Axway API &amp; MFT</div>
     <div class="badge-float bf2"><i style="background:#5B5BD6"></i>Boomi AI Agent</div>
     <div class="badge-float bf3"><i style="background:#F2C811"></i>Power BI</div>
@@ -249,34 +253,34 @@ footer a{color:#fff}
 
 <div class="wrap">
   <div class="stats rv">
-    <div class="stat"><b>4</b><span>project</span></div>
-    <div class="stat"><b>4</b><span>demo interaktif online</span></div>
-    <div class="stat"><b>2</b><span>bahasa dokumentasi (EN · ID)</span></div>
-    <div class="stat"><b>26</b><span>agent tool &amp; endpoint API dibangun</span></div>
+    <div class="stat"><b>4</b><span data-i18n="st.p">projects</span></div>
+    <div class="stat"><b>4</b><span data-i18n="st.d">live interactive demos</span></div>
+    <div class="stat"><b>2</b><span data-i18n="st.l">documentation languages (EN · ID)</span></div>
+    <div class="stat"><b>26</b><span data-i18n="st.t">agent tools &amp; API endpoints built</span></div>
   </div>
 </div>
 
-<section id="keahlian"><div class="wrap">
-  <div class="eyebrow">Keahlian</div>
-  <h2>Yang saya kerjakan</h2>
-  <p class="sub">Fokus saya di pertemuan antara sistem: memindahkan file dan data dengan aman, membuka API yang rapi, lalu membuatnya mudah dipakai lewat AI dan visualisasi.</p>
+<section id="skills"><div class="wrap">
+  <div class="eyebrow" data-i18n="sk.eye">Skills</div>
+  <h2 data-i18n="sk.h">What I do</h2>
+  <p class="sub" data-i18n="sk.sub">I work where systems meet: moving files and data securely, exposing clean APIs, and making them easy to use through AI and visualisation.</p>
   <div class="skills">
     <div class="skill rv"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h11l-3-3M20 17H9l3 3"/></svg></div>
-      <h3>Managed File Transfer &amp; API</h3><p>Onboarding partner, routing, sertifikat &amp; keamanan, serta manajemen API.</p>
+      <h3>Managed File Transfer &amp; API</h3><p data-i18n="sk.1">Partner onboarding, routing, certificates &amp; security, and API management.</p>
       <div class="chips"><span>Axway SecureTransport</span><span>Axway API Management</span><span>SFTP · HTTPS</span><span>PKI</span></div></div>
     <div class="skill rv"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/><path d="M10 6.5h4a3 3 0 0 1 3 3V14"/></svg></div>
-      <h3>Integrasi &amp; AI Agent</h3><p>Proses Boomi, Web Services, dan AI agent dengan guardrail yang ditegakkan di server.</p>
+      <h3 data-i18n="sk.2h">Integration &amp; AI Agents</h3><p data-i18n="sk.2">Boomi processes, web services and AI agents with guardrails enforced on the server.</p>
       <div class="chips"><span>Boomi Integration</span><span>Boomi Agentstudio</span><span>REST · OpenAPI</span><span>MCP</span><span>Python</span><span>Node.js · Express</span><span>React</span></div></div>
     <div class="skill rv"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg></div>
-      <h3>Data &amp; Dashboard</h3><p>Mengubah data operasional menjadi dashboard yang membantu keputusan.</p>
+      <h3 data-i18n="sk.3h">Data &amp; Dashboards</h3><p data-i18n="sk.3">Turning operational data into dashboards that support decisions.</p>
       <div class="chips"><span>Power BI</span><span>DAX</span><span>Data modeling</span><span>SQL</span></div></div>
   </div>
 </div></section>
 
-<section id="project"><div class="wrap">
-  <div class="eyebrow">Project</div>
-  <h2>Project &amp; demo interaktif</h2>
-  <p class="sub">Semua demo berjalan langsung di browser memakai data mock — silakan dicoba. Setiap project dilengkapi dokumentasi dalam Bahasa Inggris dan Indonesia.</p>
+<section id="projects"><div class="wrap">
+  <div class="eyebrow" data-i18n="pj.eye">Projects</div>
+  <h2 data-i18n="pj.h">Projects &amp; live demos</h2>
+  <p class="sub" data-i18n="pj.sub">Every demo runs right in your browser with sample data — feel free to try them. Each project comes with documentation in English and Indonesian.</p>
   <div class="projects">
 
     <article class="proj feat omni rv">
@@ -284,25 +288,25 @@ footer a{color:#fff}
         <div class="win"><div class="tb"><i></i><i></i><i></i></div><div class="in">
           <div class="sd"><b class="on"></b><b></b><b></b><b></b><b style="margin-top:18px;height:5px"></b><b style="height:5px;width:70%"></b></div>
           <div class="mn">
-            <div class="bub u">Kenapa transfer ke PT Nusantara gagal?</div>
-            <div class="bub b"><span class="crit">● Failed</span> · SFTP outbound 09:42<br>Sertifikat partner kedaluwarsa. Perbarui di transfer site, lalu kirim ulang lewat Boomi?</div>
-            <div class="kpi"><span><b class="ok">128</b>sukses</span><span><b class="crit">3</b>gagal</span><span><b class="warn">2</b>cert ≤30h</span></div>
+            <div class="bub u" data-i18n="om.q">Why did the transfer to PT Nusantara fail?</div>
+            <div class="bub b"><span class="crit">● Failed</span> · SFTP outbound 09:42<br><span data-i18n="om.a">The partner certificate has expired. Renew it on the transfer site, then resubmit through Boomi?</span></div>
+            <div class="kpi"><span><b class="ok">128</b><span data-i18n="om.k1">success</span></span><span><b class="crit">3</b><span data-i18n="om.k2">failed</span></span><span><b class="warn">2</b><span data-i18n="om.k3">cert ≤30d</span></span></div>
           </div></div></div>
       </div>
       <div class="body">
-        <span class="tagline">Project unggulan · MFT × Boomi × AI</span>
+        <span class="tagline" data-i18n="om.tag">Featured project · MFT × Boomi × AI</span>
         <h3>OmniMFT Ops Copilot</h3>
-        <p>AI copilot untuk tim operasional Managed File Transfer: tanya status transfer dalam bahasa sehari-hari, dapatkan diagnosis, lalu ambil tindakan — dengan persetujuan.</p>
+        <p data-i18n="om.p">An AI copilot for Managed File Transfer operations teams: ask about transfers in plain language, get a diagnosis, then take action — with approval.</p>
         <ul>
-          <li>Tracking &amp; diagnosis transfer Axway SecureTransport</li>
-          <li>Pengecekan sertifikat &amp; key yang akan kedaluwarsa</li>
-          <li>Onboarding partner, reprocess via Boomi, notifikasi e-mail &amp; WhatsApp</li>
-          <li>Bridge outbound-only — tanpa membuka port masuk</li>
+          <li data-i18n="om.l1">Tracking &amp; diagnosis of Axway SecureTransport transfers</li>
+          <li data-i18n="om.l2">Certificate &amp; key expiry checks</li>
+          <li data-i18n="om.l3">Partner onboarding, reprocessing via Boomi, e-mail &amp; WhatsApp notifications</li>
+          <li data-i18n="om.l4">Outbound-only bridge — no inbound ports opened</li>
         </ul>
         <div class="links">
-          <a class="lk main" href="https://diimasogan.github.io/OmniMFT-Agent/portal/"><svg><use href="#i-play"/></svg>Lihat portal</a>
+          <a class="lk main" href="https://diimasogan.github.io/OmniMFT-Agent/portal/"><svg><use href="#i-play"/></svg><span data-i18n="om.portal">Open portal</span></a>
           <a class="lk" href="https://diimasogan.github.io/OmniMFT-Agent/docs/OmniMFT-Ops-Copilot-Documentation.html"><svg><use href="#i-doc"/></svg>Docs (EN)</a>
-          <a class="lk" href="https://diimasogan.github.io/OmniMFT-Agent/docs/id/OmniMFT-Ops-Copilot-Dokumentasi.html"><svg><use href="#i-doc"/></svg>Dokumentasi (ID)</a>
+          <a class="lk" href="https://diimasogan.github.io/OmniMFT-Agent/docs/id/OmniMFT-Ops-Copilot-Dokumentasi.html"><svg><use href="#i-doc"/></svg><span data-i18n="docid">Docs (ID)</span></a>
           <a class="lk" href="https://github.com/diimasogan/OmniMFT-Agent"><svg><use href="#i-gh"/></svg>Code</a>
         </div>
       </div>
@@ -313,19 +317,19 @@ footer a{color:#fff}
         <div class="win"><div class="tb"><i></i><i></i><i></i></div><div class="in">
           <div class="sd"><b class="on"></b><b></b><b></b><b></b></div>
           <div class="mn">
-            <div class="bub u">Berapa sisa cuti tahunan saya?</div>
-            <div class="bub b">Anda memiliki <b style="color:#fff">9 hari</b> cuti tahunan tersedia.</div>
-            <div class="kpi"><span><b>9</b>Tahunan</span><span><b>9</b>Sakit</span><span><b>5</b>Khusus</span></div>
+            <div class="bub u" data-i18n="hr.q">How much annual leave do I have left?</div>
+            <div class="bub b" data-i18n="hr.a">You have <b style="color:#fff">9 days</b> of annual leave available.</div>
+            <div class="kpi"><span><b>9</b><span data-i18n="hr.k1">Annual</span></span><span><b>9</b><span data-i18n="hr.k2">Sick</span></span><span><b>5</b><span data-i18n="hr.k3">Special</span></span></div>
           </div></div></div>
       </div>
       <div class="body">
         <span class="tagline">Boomi Agentstudio · AI Agent</span>
         <h3>HR Leave Assistant</h3>
-        <p>AI agent cuti karyawan yang dwibahasa. Izin akses dan 9 aturan kebijakan ditegakkan di Boomi — tahan terhadap prompt injection.</p>
+        <p data-i18n="hr.p">A bilingual AI agent for employee leave. Access rights and 9 policy rules are enforced in Boomi — resistant to prompt injection.</p>
         <div class="links">
           <a class="lk main" href="https://diimasogan.github.io/HR-LeaveAgent/portal/"><svg><use href="#i-play"/></svg>Live mockup</a>
           <a class="lk" href="https://diimasogan.github.io/HR-LeaveAgent/docs/HR-Leave-Agent-Documentation.html"><svg><use href="#i-doc"/></svg>Docs (EN)</a>
-          <a class="lk" href="https://diimasogan.github.io/HR-LeaveAgent/docs/id/HR-Leave-Agent-Dokumentasi.html"><svg><use href="#i-doc"/></svg>Dokumentasi (ID)</a>
+          <a class="lk" href="https://diimasogan.github.io/HR-LeaveAgent/docs/id/HR-Leave-Agent-Dokumentasi.html"><svg><use href="#i-doc"/></svg><span data-i18n="docid">Docs (ID)</span></a>
           <a class="lk" href="https://github.com/diimasogan/HR-LeaveAgent"><svg><use href="#i-gh"/></svg>Code</a>
         </div>
       </div>
@@ -346,11 +350,11 @@ footer a{color:#fff}
       <div class="body">
         <span class="tagline">Boomi Web Services · REST</span>
         <h3>PetStore Mock API</h3>
-        <p>Endpoint mock kompatibel Swagger Petstore dengan konsol interaktif yang menyorot jalur proses Boomi setiap request.</p>
+        <p data-i18n="pt.p">Swagger Petstore–compatible mock endpoints with an interactive console that highlights the Boomi process path of every request.</p>
         <div class="links">
           <a class="lk main" href="https://diimasogan.github.io/PetStore-MockAPI/portal/"><svg><use href="#i-play"/></svg>Live console</a>
           <a class="lk" href="https://diimasogan.github.io/PetStore-MockAPI/docs/PetStore-Mock-API-Documentation.html"><svg><use href="#i-doc"/></svg>Docs (EN)</a>
-          <a class="lk" href="https://diimasogan.github.io/PetStore-MockAPI/docs/id/PetStore-Mock-API-Dokumentasi.html"><svg><use href="#i-doc"/></svg>Dokumentasi (ID)</a>
+          <a class="lk" href="https://diimasogan.github.io/PetStore-MockAPI/docs/id/PetStore-Mock-API-Dokumentasi.html"><svg><use href="#i-doc"/></svg><span data-i18n="docid">Docs (ID)</span></a>
           <a class="lk" href="https://github.com/diimasogan/PetStore-MockAPI"><svg><use href="#i-gh"/></svg>Code</a>
         </div>
       </div>
@@ -368,11 +372,11 @@ footer a{color:#fff}
       <div class="body">
         <span class="tagline">Full-stack JavaScript · Express × React</span>
         <h3>FullStackJS Express + React</h3>
-        <p>REST API dengan Express, Prisma, dan MySQL, plus aplikasi React untuk registrasi, login JWT, dan manajemen user (CRUD). Demo live menjalankan aplikasi React aslinya dengan backend yang disimulasikan di browser.</p>
+        <p data-i18n="fs.p">A REST API with Express, Prisma and MySQL, plus a React app for registration, JWT login and user management (CRUD). The live demo runs the real React app with the backend simulated in the browser.</p>
         <div class="links">
           <a class="lk main" href="https://diimasogan.github.io/FullStackJS-ExpressReact-Beginner/"><svg><use href="#i-play"/></svg>Live demo</a>
           <a class="lk" href="https://diimasogan.github.io/FullStackJS-ExpressReact-Beginner/docs/FullStackJS-Documentation.html"><svg><use href="#i-doc"/></svg>Docs (EN)</a>
-          <a class="lk" href="https://diimasogan.github.io/FullStackJS-ExpressReact-Beginner/docs/id/FullStackJS-Dokumentasi.html"><svg><use href="#i-doc"/></svg>Dokumentasi (ID)</a>
+          <a class="lk" href="https://diimasogan.github.io/FullStackJS-ExpressReact-Beginner/docs/id/FullStackJS-Dokumentasi.html"><svg><use href="#i-doc"/></svg><span data-i18n="docid">Docs (ID)</span></a>
           <a class="lk" href="https://github.com/diimasogan/FullStackJS-ExpressReact-Beginner"><svg><use href="#i-gh"/></svg>Code</a>
         </div>
       </div>
@@ -381,22 +385,22 @@ footer a{color:#fff}
   </div>
 </div></section>
 
-<section id="kontak"><div class="wrap">
-  <div class="eyebrow">Kontak</div>
-  <h2>Mari terhubung</h2>
-  <p class="sub">Punya pertanyaan soal integrasi, MFT, atau ingin diskusi project? Sapa saya di salah satu kanal berikut — saya juga berbagi konten teknologi di YouTube, Instagram, dan TikTok.</p>
+<section id="contact"><div class="wrap">
+  <div class="eyebrow" data-i18n="ct.eye">Contact</div>
+  <h2 data-i18n="ct.h">Let’s connect</h2>
+  <p class="sub" data-i18n="ct.sub">Have a question about integration or MFT, or want to discuss a project or role? Reach out on any channel below — I also share tech content on YouTube, Instagram and TikTok.</p>
   <div class="connect">
-    <a class="cc li rv" href="https://www.linkedin.com/in/dimasagungprakasa/" target="_blank" rel="noopener"><span class="ic"><svg><use href="#i-li"/></svg></span><b>LinkedIn</b><span>in/dimasagungprakasa</span><em>Terhubung →</em></a>
-    <a class="cc yt rv" href="https://www.youtube.com/@diimas_ogan" target="_blank" rel="noopener"><span class="ic"><svg><use href="#i-yt"/></svg></span><b>YouTube</b><span>@diimas_ogan</span><em>Tonton →</em></a>
-    <a class="cc ig rv" href="https://instagram.com/diimas_ogan" target="_blank" rel="noopener"><span class="ic"><svg><use href="#i-ig"/></svg></span><b>Instagram</b><span>@diimas_ogan</span><em>Ikuti →</em></a>
-    <a class="cc tt rv" href="https://www.tiktok.com/@diimas_ogan" target="_blank" rel="noopener"><span class="ic"><svg><use href="#i-tt"/></svg></span><b>TikTok</b><span>@diimas_ogan</span><em>Ikuti →</em></a>
-    <a class="cc gh rv" href="https://github.com/diimasogan" target="_blank" rel="noopener"><span class="ic"><svg><use href="#i-gh"/></svg></span><b>GitHub</b><span>@diimasogan</span><em>Lihat kode →</em></a>
+    <a class="cc li rv" href="https://www.linkedin.com/in/dimasagungprakasa/" target="_blank" rel="noopener"><span class="ic"><svg><use href="#i-li"/></svg></span><b>LinkedIn</b><span>in/dimasagungprakasa</span><em data-i18n="ct.li">Connect →</em></a>
+    <a class="cc yt rv" href="https://www.youtube.com/@diimas_ogan" target="_blank" rel="noopener"><span class="ic"><svg><use href="#i-yt"/></svg></span><b>YouTube</b><span>@diimas_ogan</span><em data-i18n="ct.yt">Watch →</em></a>
+    <a class="cc ig rv" href="https://instagram.com/diimas_ogan" target="_blank" rel="noopener"><span class="ic"><svg><use href="#i-ig"/></svg></span><b>Instagram</b><span>@diimas_ogan</span><em data-i18n="ct.f">Follow →</em></a>
+    <a class="cc tt rv" href="https://www.tiktok.com/@diimas_ogan" target="_blank" rel="noopener"><span class="ic"><svg><use href="#i-tt"/></svg></span><b>TikTok</b><span>@diimas_ogan</span><em data-i18n="ct.f">Follow →</em></a>
+    <a class="cc gh rv" href="https://github.com/diimasogan" target="_blank" rel="noopener"><span class="ic"><svg><use href="#i-gh"/></svg></span><b>GitHub</b><span>@diimasogan</span><em data-i18n="ct.gh">View code →</em></a>
   </div>
 </div></section>
 </main>
 
 <footer><div class="wrap">
-  <span>© <span id="yr">2026</span> Dimas Agung Prakasa · Dibuat dengan HTML, CSS &amp; sedikit JavaScript</span>
+  <span>© <span id="yr">2026</span> Dimas Agung Prakasa · <span data-i18n="ft">Built with HTML, CSS &amp; a little JavaScript</span></span>
   <div class="socials">
     <a class="soc" href="https://www.linkedin.com/in/dimasagungprakasa/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg><use href="#i-li"/></svg></a>
     <a class="soc" href="https://www.youtube.com/@diimas_ogan" target="_blank" rel="noopener" aria-label="YouTube"><svg><use href="#i-yt"/></svg></a>
@@ -417,6 +421,82 @@ footer a{color:#fff}
     try { localStorage.setItem(KEY, next); } catch (e) {}
   });
   document.getElementById("yr").textContent = new Date().getFullYear();
+
+  /* language: English is the default; Indonesian is optional and remembered per visitor */
+  var ID = {
+  "nav.skills": "Keahlian",
+  "nav.projects": "Project",
+  "nav.contact": "Kontak",
+  "hero.open": "Terbuka untuk kolaborasi &amp; konsultasi",
+  "hero.hi": "Halo, saya",
+  "hero.intro": "Saya membangun integrasi enterprise yang aman dan mudah dipakai — dari Managed File Transfer dan API, orkestrasi di Boomi, sampai AI agent yang bisa diajak bicara dan dashboard data.",
+  "hero.cta": "Lihat project",
+  "hero.li": "Terhubung di LinkedIn",
+  "st.p": "project",
+  "st.d": "demo interaktif online",
+  "st.l": "bahasa dokumentasi (EN · ID)",
+  "st.t": "agent tool &amp; endpoint API dibangun",
+  "sk.eye": "Keahlian",
+  "sk.h": "Yang saya kerjakan",
+  "sk.sub": "Fokus saya di pertemuan antara sistem: memindahkan file dan data dengan aman, membuka API yang rapi, lalu membuatnya mudah dipakai lewat AI dan visualisasi.",
+  "sk.1": "Onboarding partner, routing, sertifikat &amp; keamanan, serta manajemen API.",
+  "sk.2h": "Integrasi &amp; AI Agent",
+  "sk.2": "Proses Boomi, Web Services, dan AI agent dengan guardrail yang ditegakkan di server.",
+  "sk.3h": "Data &amp; Dashboard",
+  "sk.3": "Mengubah data operasional menjadi dashboard yang membantu keputusan.",
+  "pj.eye": "Project",
+  "pj.h": "Project &amp; demo interaktif",
+  "pj.sub": "Semua demo berjalan langsung di browser memakai data mock — silakan dicoba. Setiap project dilengkapi dokumentasi dalam Bahasa Inggris dan Indonesia.",
+  "om.q": "Kenapa transfer ke PT Nusantara gagal?",
+  "om.a": "Sertifikat partner kedaluwarsa. Perbarui di transfer site, lalu kirim ulang lewat Boomi?",
+  "om.k1": "sukses",
+  "om.k2": "gagal",
+  "om.k3": "cert ≤30h",
+  "om.tag": "Project unggulan · MFT × Boomi × AI",
+  "om.p": "AI copilot untuk tim operasional Managed File Transfer: tanya status transfer dalam bahasa sehari-hari, dapatkan diagnosis, lalu ambil tindakan — dengan persetujuan.",
+  "om.l1": "Tracking &amp; diagnosis transfer Axway SecureTransport",
+  "om.l2": "Pengecekan sertifikat &amp; key yang akan kedaluwarsa",
+  "om.l3": "Onboarding partner, reprocess via Boomi, notifikasi e-mail &amp; WhatsApp",
+  "om.l4": "Bridge outbound-only — tanpa membuka port masuk",
+  "om.portal": "Lihat portal",
+  "docid": "Dokumentasi (ID)",
+  "hr.q": "Berapa sisa cuti tahunan saya?",
+  "hr.a": "Anda memiliki <b style=\"color:#fff\">9 hari</b> cuti tahunan tersedia.",
+  "hr.k1": "Tahunan",
+  "hr.k2": "Sakit",
+  "hr.k3": "Khusus",
+  "hr.p": "AI agent cuti karyawan yang dwibahasa. Izin akses dan 9 aturan kebijakan ditegakkan di Boomi — tahan terhadap prompt injection.",
+  "pt.p": "Endpoint mock kompatibel Swagger Petstore dengan konsol interaktif yang menyorot jalur proses Boomi setiap request.",
+  "fs.p": "REST API dengan Express, Prisma, dan MySQL, plus aplikasi React untuk registrasi, login JWT, dan manajemen user (CRUD). Demo live menjalankan aplikasi React aslinya dengan backend yang disimulasikan di browser.",
+  "ct.eye": "Kontak",
+  "ct.h": "Mari terhubung",
+  "ct.sub": "Punya pertanyaan soal integrasi, MFT, atau ingin diskusi project? Sapa saya di salah satu kanal berikut — saya juga berbagi konten teknologi di YouTube, Instagram, dan TikTok.",
+  "ct.li": "Terhubung →",
+  "ct.yt": "Tonton →",
+  "ct.f": "Ikuti →",
+  "ct.gh": "Lihat kode →",
+  "ft": "Dibuat dengan HTML, CSS &amp; sedikit JavaScript"
+  };
+  var LKEY = "landing-lang", EN = {};
+  document.querySelectorAll("[data-i18n]").forEach(function (el) { EN[el.getAttribute("data-i18n")] = el.innerHTML; });
+  var btn = document.getElementById("lang");
+  function setLang(l) {
+    document.querySelectorAll("[data-i18n]").forEach(function (el) {
+      var k = el.getAttribute("data-i18n"), v = l === "id" ? ID[k] : EN[k];
+      if (v != null) el.innerHTML = v;
+    });
+    root.setAttribute("lang", l);
+    btn.textContent = l === "id" ? "EN" : "ID";
+    btn.title = l === "id" ? "English" : "Bahasa Indonesia";
+    btn.setAttribute("aria-label", l === "id" ? "Switch to English" : "Ganti ke Bahasa Indonesia");
+  }
+  var saved = null; try { saved = localStorage.getItem(LKEY); } catch (e) {}
+  if (saved === "id") setLang("id");
+  btn.addEventListener("click", function () {
+    var next = root.getAttribute("lang") === "id" ? "en" : "id";
+    setLang(next);
+    try { localStorage.setItem(LKEY, next); } catch (e) {}
+  });
   var els = document.querySelectorAll(".rv");
   if (!("IntersectionObserver" in window)) { els.forEach(function (e) { e.classList.add("in"); }); return; }
   var io = new IntersectionObserver(function (entries) {
