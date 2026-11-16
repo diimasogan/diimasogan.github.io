@@ -155,7 +155,8 @@ h2{font-size:clamp(28px,4vw,40px);line-height:1.15;margin:8px 0 12px;letter-spac
 .m.g{background:#132E52;color:#7FB2F0}.m.p{background:#0E3326;color:#4CC98C}
 
 /* connect */
-.connect{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}
+.connect{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.cc.mail{--c:var(--brand)}.cc.mail span{overflow-wrap:anywhere}
 .cc{--c:var(--brand);text-decoration:none;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:20px;box-shadow:var(--shadow);display:flex;flex-direction:column;gap:12px;transition:transform .15s,border-color .15s}
 .cc:hover{transform:translateY(-3px);border-color:var(--c)}
 .cc .ic{width:46px;height:46px;border-radius:14px;display:grid;place-items:center;background:var(--c);color:#fff}
@@ -212,7 +213,9 @@ footer a{color:#fff}
   <symbol id="i-lt" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M12 3v18M4.2 7.5l15.6 9M4.2 16.5l15.6-9"/></g></symbol>
   <symbol id="i-arrow" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" d="M7 17 17 7M8 7h9v9"/></symbol>
   <symbol id="i-doc" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M5 3h10l4 4v14H5z"/><path d="M14 3v5h5M8 13h8M8 17h5"/></g></symbol>
-  <symbol id="i-play" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="3"/><path d="m10 9 5 3-5 3z" fill="currentColor"/></g></symbol>
+  <symbol id="i-dl" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v11m-5-5 5 5 5-5M5 20h14"/></g></symbol>
+<symbol id="i-mail" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></g></symbol>
+<symbol id="i-play" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="3"/><path d="m10 9 5 3-5 3z" fill="currentColor"/></g></symbol>
 </svg>
 
 <header class="bar"><div class="wrap">
@@ -234,6 +237,7 @@ footer a{color:#fff}
     <div class="cta">
       <a class="btn primary" href="#projects"><span data-i18n="hero.cta">View projects</span> <svg><use href="#i-arrow"/></svg></a>
       <a class="btn ghost" href="https://www.linkedin.com/in/dimasagungprakasa/" target="_blank" rel="noopener"><svg><use href="#i-li"/></svg><span data-i18n="hero.li">Connect on LinkedIn</span></a>
+      <a class="btn ghost" href="cv/Dimas_Agung_Prakasa_CV.pdf" download><svg><use href="#i-dl"/></svg><span data-i18n="hero.cv">Download CV</span></a>
     </div>
     <div class="socials" aria-label="Social media">
       <a class="soc" href="https://github.com/diimasogan" target="_blank" rel="noopener" aria-label="GitHub" title="GitHub"><svg><use href="#i-gh"/></svg></a>
@@ -414,6 +418,7 @@ footer a{color:#fff}
   <h2 data-i18n="ct.h">Let’s connect</h2>
   <p class="sub" data-i18n="ct.sub">Have a question about integration or MFT, or want to discuss a project or role? Reach out on any channel below — I also share tech content on YouTube, Instagram and TikTok.</p>
   <div class="connect">
+    <a class="cc mail rv" href="mailto:dimasogan231@gmail.com"><span class="ic"><svg><use href="#i-mail"/></svg></span><b>Email</b><span>dimasogan231@gmail.com</span><em data-i18n="ct.mail">Send an email →</em></a>
     <a class="cc li rv" href="https://www.linkedin.com/in/dimasagungprakasa/" target="_blank" rel="noopener"><span class="ic"><svg><use href="#i-li"/></svg></span><b>LinkedIn</b><span>in/dimasagungprakasa</span><em data-i18n="ct.li">Connect →</em></a>
     <a class="cc yt rv" href="https://www.youtube.com/@diimas_ogan" target="_blank" rel="noopener"><span class="ic"><svg><use href="#i-yt"/></svg></span><b>YouTube</b><span>@diimas_ogan</span><em data-i18n="ct.yt">Watch →</em></a>
     <a class="cc ig rv" href="https://instagram.com/diimas_ogan" target="_blank" rel="noopener"><span class="ic"><svg><use href="#i-ig"/></svg></span><b>Instagram</b><span>@diimas_ogan</span><em data-i18n="ct.f">Follow →</em></a>
@@ -456,6 +461,8 @@ footer a{color:#fff}
   "hero.intro": "Saya membangun integrasi enterprise yang aman dan mudah dipakai — dari Managed File Transfer dan API, orkestrasi di Boomi, sampai AI agent yang bisa diajak bicara dan dashboard data.",
   "hero.cta": "Lihat project",
   "hero.li": "Terhubung di LinkedIn",
+  "hero.cv": "Unduh CV",
+  "ct.mail": "Kirim email →",
   "st.p": "project",
   "st.d": "demo interaktif online",
   "st.l": "bahasa dokumentasi (EN · ID)",
