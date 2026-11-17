@@ -202,7 +202,7 @@ h2{font-size:clamp(28px,4vw,40px);line-height:1.15;margin:8px 0 12px;letter-spac
 .proj.feat{grid-column:1/-1;flex-direction:row}
 .proj.feat .shot{flex:1.1;min-height:320px}
 .proj.feat .body{flex:1}
-.proj.omni{--c:var(--omni)}.proj.hr{--c:var(--hr)}.proj.pet{--c:var(--pet)}.proj.fsjs{--c:var(--fsjs)}.proj.pbi{--c:#B8860B}
+.proj.omni{--c:var(--omni)}.proj.hr{--c:var(--hr)}.proj.pet{--c:var(--pet)}.proj.fsjs{--c:var(--fsjs)}.proj.pbi{--c:#B8860B}.proj.oaa{--c:#3A9B10}
 .pbk{display:grid;grid-template-columns:repeat(3,1fr);gap:6px}.pbk span{background:#14253D;border-radius:6px;padding:6px 7px;font-size:9px;color:#9AAABD}.pbk b{display:block;font-size:12px;color:#fff}
 .pbb{display:grid;gap:5px;margin-top:8px}.pbb i{display:block;height:9px;border-radius:0 4px 4px 0;background:#F2C811}
 .proj.wide{grid-column:1/-1;flex-direction:row}.proj.wide .shot{flex:1;min-height:240px}.proj.wide .body{flex:1.2}
@@ -579,6 +579,30 @@ footer a{color:#fff}
       </div>
     </article>
 
+    <article class="proj wide oaa rv">
+      <div class="shot" aria-hidden="true">
+        <div class="win"><div class="tb"><i></i><i></i><i></i></div><div class="in">
+          <div class="sd"><b class="on"></b><b></b><b></b></div>
+          <div class="mn">
+            <div class="bub u" data-i18n="oaa.q">Our nightly SFTP transfers to the bank keep failing.</div>
+            <div class="bub b" data-i18n="oaa.a">Thanks! Which systems are involved, and how urgent is it?</div>
+            <div class="kpi"><span><b>PDF</b><span data-i18n="oaa.k1">brief</span></span><span><b>9</b><span data-i18n="oaa.k2">AI providers</span></span><span><b>EN · ID</b><span data-i18n="oaa.k3">languages</span></span></div>
+          </div></div></div>
+      </div>
+      <div class="body">
+        <span class="tagline">WordPress · Claude · AI Agent</span>
+        <h3>OGNIVID AI Assistant</h3>
+        <p data-i18n="oaa.p">A WordPress plugin that interviews website visitors like a consultant and turns the chat into a structured project brief, emailed as HTML + PDF and kept in a wp-admin inbox. Claude by default, eight other AI providers, and a form fallback so no lead is lost. Running live on ognivid.com.</p>
+        <div class="links">
+          <a class="lk main" href="https://diimasogan.github.io/ognivid-ai-assistant/demo/"><svg><use href="#i-play"/></svg>Live mockup</a>
+          <a class="lk" href="https://diimasogan.github.io/ognivid-ai-assistant/docs/OGNIVID-AI-Assistant-Documentation.html"><svg><use href="#i-doc"/></svg>Docs (EN)</a>
+          <a class="lk" href="https://diimasogan.github.io/ognivid-ai-assistant/docs/id/OGNIVID-AI-Assistant-Dokumentasi.html"><svg><use href="#i-doc"/></svg><span data-i18n="docid">Docs (ID)</span></a>
+          <a class="lk" href="https://github.com/diimasogan/ognivid-ai-assistant"><svg><use href="#i-gh"/></svg>Code</a>
+        </div>
+      </div>
+    </article>
+
+
   </div>
 </div></section>
 
@@ -719,6 +743,12 @@ footer a{color:#fff}
   "hr.k3": "Khusus",
   "hr.p": "AI agent cuti karyawan yang dwibahasa. Izin akses dan 9 aturan kebijakan ditegakkan di Boomi — tahan terhadap prompt injection.",
   "pt.p": "Endpoint mock kompatibel Swagger Petstore dengan konsol interaktif yang menyorot jalur proses Boomi setiap request.",
+  "oaa.q": "Transfer SFTP malam ke bank terus gagal.",
+  "oaa.a": "Terima kasih! Sistem apa saja yang terlibat, dan seberapa mendesak?",
+  "oaa.k1": "brief",
+  "oaa.k2": "penyedia AI",
+  "oaa.k3": "bahasa",
+  "oaa.p": "Plugin WordPress yang mewawancarai pengunjung website layaknya konsultan dan mengubah chat menjadi project brief terstruktur, dikirim lewat email HTML + PDF dan tersimpan di inbox wp-admin. Claude secara bawaan, delapan penyedia AI lain, dan formulir cadangan sehingga tidak ada calon klien yang hilang. Sudah berjalan di ognivid.com.",
   "pb.p": "Laporan penjualan properti interaktif: net sales per provinsi, kota, SBU, dan tipe produk, tren pembatalan bulanan, plus tabel ringkasan dan detail dengan cross-filter. Awalnya dibuat di Power BI, lalu dibangun ulang untuk web dengan data yang dianonimkan.",
   "fs.p": "REST API dengan Express, Prisma, dan MySQL, plus aplikasi React untuk registrasi, login JWT, dan manajemen user (CRUD). Demo live menjalankan aplikasi React aslinya dengan backend yang disimulasikan di browser.",
   "ct.eye": "Kontak",
