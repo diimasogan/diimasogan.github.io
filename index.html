@@ -121,7 +121,7 @@ img{display:block;max-width:100%}
 .portrait img{position:absolute;inset:14px;width:calc(100% - 28px);height:calc(100% - 28px);border-radius:50%;object-fit:cover;z-index:1}
 .badge-float{position:absolute;z-index:2;background:rgba(11,27,51,.85);backdrop-filter:blur(6px);border:1px solid rgba(255,255,255,.15);border-radius:14px;padding:8px 12px;font-size:13px;font-weight:700;display:flex;gap:8px;align-items:center;box-shadow:0 10px 30px -10px rgba(0,0,0,.5);white-space:nowrap}
 .badge-float i{width:10px;height:10px;border-radius:3px;font-style:normal}
-.bf1{top:6%;left:-8%}.bf2{bottom:16%;right:-10%}.bf3{bottom:-2%;left:6%}
+.bf1{top:6%;left:-8%}.bf2{bottom:16%;right:-10%}.bf3{bottom:-2%;left:6%}.bf4{top:16%;right:-12%}
 @keyframes spin{to{transform:rotate(360deg)}}
 
 /* sections */
@@ -279,7 +279,7 @@ footer a{color:#fff}
 @media (max-width:960px){
   .hero .wrap{grid-template-columns:1fr;text-align:left;padding-top:48px}
   .portrait{order:-1;width:min(220px,60vw)}
-  .bf1{left:-14%}.bf2{right:-18%}
+  .bf1{left:-14%}.bf2{right:-18%}.bf4{top:42%;right:-18%}
   .stats{grid-template-columns:repeat(2,1fr)}
   .skills{grid-template-columns:1fr}
   .certs,.courses,.testis{grid-template-columns:1fr}
@@ -299,7 +299,7 @@ footer a{color:#fff}
   .cert .vf{margin-left:68px}
   .connect,.connect.direct{grid-template-columns:1fr}
   .badge-float{font-size:11.5px;padding:6px 9px}
-  .bf2{right:-6%}.bf1{left:-6%}
+  .bf2{right:-6%}.bf1{left:-6%}.bf4{right:-6%}
   .win .in{grid-template-columns:52px 1fr}
 }
 @media (max-width:420px){
@@ -364,8 +364,9 @@ footer a{color:#fff}
     <div class="ring"></div>
     <img src="https://avatars.githubusercontent.com/u/52793623?v=4&s=460" alt="Photo of Dimas Agung Prakasa" width="312" height="312">
     <div class="badge-float bf1"><i style="background:#13A89E"></i>Axway API &amp; MFT</div>
-    <div class="badge-float bf2"><i style="background:#5B5BD6"></i>Boomi AI Agent</div>
+    <div class="badge-float bf2"><i style="background:#5B5BD6"></i>Boomi &amp; AI Agents</div>
     <div class="badge-float bf3"><i style="background:#F2C811"></i>Power BI</div>
+    <div class="badge-float bf4"><i style="background:#D9631E"></i>Web Apps &amp; Self-Hosted</div>
   </div>
 </div></section>
 
