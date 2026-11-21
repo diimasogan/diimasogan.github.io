@@ -137,7 +137,7 @@ h2{font-size:clamp(28px,4vw,40px);line-height:1.15;margin:8px 0 12px;letter-spac
 .stat span{color:var(--muted);font-size:14px}
 
 /* skills */
-.skills{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.skills{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
 /* certifications: vendor certs prominent, courses secondary */
 .certs{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
 .cert{--c:#0B6FB8;position:relative;display:flex;align-items:center;gap:16px;text-decoration:none;background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--c);border-radius:var(--radius);padding:20px 22px;box-shadow:var(--shadow);transition:transform .15s,border-color .15s}
@@ -381,17 +381,20 @@ footer a{color:#fff}
 <section id="skills"><div class="wrap">
   <div class="eyebrow" data-i18n="sk.eye">Skills</div>
   <h2 data-i18n="sk.h">What I do</h2>
-  <p class="sub" data-i18n="sk.sub">I work where systems meet: moving files and data securely, exposing clean APIs, and making them easy to use through AI and visualisation.</p>
+  <p class="sub" data-i18n="sk.sub">I work where systems meet: moving files and data securely, exposing clean APIs, building the apps and self-hosted platforms around them, and making it all easy to use through AI and visualisation.</p>
   <div class="skills">
     <div class="skill rv"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h11l-3-3M20 17H9l3 3"/></svg></div>
       <h3>Managed File Transfer &amp; API</h3><p data-i18n="sk.1">Partner onboarding, routing, certificates &amp; security, and API management.</p>
       <div class="chips"><span>Axway SecureTransport</span><span>Axway API Management</span><span>SFTP · HTTPS</span><span>PKI</span></div></div>
     <div class="skill rv"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/><path d="M10 6.5h4a3 3 0 0 1 3 3V14"/></svg></div>
       <h3 data-i18n="sk.2h">Integration &amp; AI Agents</h3><p data-i18n="sk.2">Boomi processes, web services and AI agents with guardrails enforced on the server.</p>
-      <div class="chips"><span>Boomi Integration</span><span>Boomi Agentstudio</span><span>REST · OpenAPI</span><span>MCP</span><span>Python</span><span>Node.js · Express</span><span>React</span></div></div>
+      <div class="chips"><span>Boomi Integration</span><span>Boomi Agentstudio</span><span>REST · OpenAPI</span><span>MCP</span><span>Python</span></div></div>
     <div class="skill rv"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg></div>
       <h3 data-i18n="sk.3h">Data &amp; Dashboards</h3><p data-i18n="sk.3">Turning operational data into dashboards that support decisions.</p>
       <div class="chips"><span>Power BI</span><span>DAX</span><span>Data modeling</span><span>SQL</span></div></div>
+    <div class="skill rv"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="7" rx="1.5"/><rect x="3" y="13" width="18" height="7" rx="1.5"/><path d="M7 7.5h.01M7 16.5h.01"/></svg></div>
+      <h3 data-i18n="sk.4h">Custom Apps &amp; Self-Hosted</h3><p data-i18n="sk.4">Custom web apps, plus installing, configuring and hardening self-hosted platforms on your own servers.</p>
+      <div class="chips"><span>Node.js · Express</span><span>React</span><span>Proxmox</span><span>WordPress</span><span>Nextcloud</span><span>Immich</span></div></div>
   </div>
 </div></section>
 
@@ -715,12 +718,14 @@ footer a{color:#fff}
   "st.t": "engineer &amp; analis dipimpin sebagai Technical Lead",
   "sk.eye": "Keahlian",
   "sk.h": "Yang saya kerjakan",
-  "sk.sub": "Fokus saya di pertemuan antara sistem: memindahkan file dan data dengan aman, membuka API yang rapi, lalu membuatnya mudah dipakai lewat AI dan visualisasi.",
+  "sk.sub": "Fokus saya di pertemuan antara sistem: memindahkan file dan data dengan aman, membuka API yang rapi, membangun aplikasi dan platform self-hosted di sekitarnya, lalu membuat semuanya mudah dipakai lewat AI dan visualisasi.",
   "sk.1": "Onboarding partner, routing, sertifikat &amp; keamanan, serta manajemen API.",
   "sk.2h": "Integrasi &amp; AI Agent",
   "sk.2": "Proses Boomi, Web Services, dan AI agent dengan guardrail yang ditegakkan di server.",
   "sk.3h": "Data &amp; Dashboard",
   "sk.3": "Mengubah data operasional menjadi dashboard yang membantu keputusan.",
+  "sk.4h": "Aplikasi Custom &amp; Self-Hosted",
+  "sk.4": "Aplikasi web custom, serta instalasi, konfigurasi, dan pengamanan platform self-hosted di server sendiri.",
   "pj.eye": "Project",
   "pj.h": "Project &amp; demo interaktif",
   "pj.sub": "Semua demo berjalan langsung di browser memakai data mock — silakan dicoba. Setiap project dilengkapi dokumentasi dalam Bahasa Inggris dan Indonesia.",
