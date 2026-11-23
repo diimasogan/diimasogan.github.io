@@ -38,7 +38,9 @@
   "knowsAbout": ["Boomi", "Boomi Integration", "Boomi Agentstudio", "Axway SecureTransport", "Axway API Management", "Managed File Transfer", "API Integration", "Power BI", "DAX", "Data Modeling", "AI Agents", "MCP", "Custom Web Applications", "Node.js", "React", "Self-Hosted Platforms", "Proxmox", "WordPress", "Nextcloud"],
   "hasCredential": [
     { "@type": "EducationalOccupationalCredential", "name": "Boomi Professional Integration Developer", "credentialCategory": "certification", "recognizedBy": { "@type": "Organization", "name": "Boomi" }, "url": "https://verify.skilljar.com/c/v2se367urukh" },
-    { "@type": "EducationalOccupationalCredential", "name": "Boomi Associate Integration Developer", "credentialCategory": "certification", "recognizedBy": { "@type": "Organization", "name": "Boomi" }, "url": "https://verify.skilljar.com/c/mex824abth5g" }
+    { "@type": "EducationalOccupationalCredential", "name": "Boomi Associate Integration Developer", "credentialCategory": "certification", "recognizedBy": { "@type": "Organization", "name": "Boomi" }, "url": "https://verify.skilljar.com/c/mex824abth5g" },
+    { "@type": "EducationalOccupationalCredential", "name": "Google AI Professional Certificate", "credentialCategory": "certificate", "recognizedBy": { "@type": "Organization", "name": "Google" }, "url": "https://www.coursera.org/verify/professional-cert/50NDG3ITYOQU" },
+    { "@type": "EducationalOccupationalCredential", "name": "Google IT Support Professional Certificate", "credentialCategory": "certificate", "recognizedBy": { "@type": "Organization", "name": "Google" }, "url": "https://www.coursera.org/verify/professional-cert/W7ATL9NEZQD9" }
   ],
   "sameAs": [
     "https://www.linkedin.com/in/dimasagungprakasa/",
@@ -141,6 +143,7 @@ h2{font-size:clamp(28px,4vw,40px);line-height:1.15;margin:8px 0 12px;letter-spac
 /* certifications: vendor certs prominent, courses secondary */
 .certs{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
 .cert{--c:#0B6FB8;position:relative;display:flex;align-items:center;gap:16px;text-decoration:none;background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--c);border-radius:var(--radius);padding:20px 22px;box-shadow:var(--shadow);transition:transform .15s,border-color .15s}
+.cert.gg{--c:#1A73E8}
 .cert:hover{transform:translateY(-2px);border-color:var(--c)}
 .cert .seal{flex:none;width:52px;height:52px;border-radius:14px;display:grid;place-items:center;background:color-mix(in srgb,var(--c) 14%,transparent);color:var(--c)}
 .cert .seal svg{width:28px;height:28px}
@@ -151,6 +154,8 @@ h2{font-size:clamp(28px,4vw,40px);line-height:1.15;margin:8px 0 12px;letter-spac
 .cert .vf{margin-left:auto;flex:none;font-size:13.5px;font-weight:700;color:var(--c);border:1px solid color-mix(in srgb,var(--c) 40%,var(--line));border-radius:999px;padding:5px 12px;white-space:nowrap}
 :root[data-theme="dark"] .cert{--c:#5AB0F0}
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .cert{--c:#5AB0F0}}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .cert.gg{--c:#8AB4F8}}
+:root[data-theme="dark"] .cert.gg{--c:#8AB4F8}
 .courses-h{margin:28px 0 10px;font-size:13px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
 .courses{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(2,1fr);gap:8px}
 .courses a{display:flex;flex-direction:column;gap:2px;text-decoration:none;font-size:14px;font-weight:600;padding:10px 14px;border:1px solid var(--line);border-radius:12px;background:var(--surface-2)}
@@ -446,6 +451,24 @@ footer a{color:#fff}
       </span>
       <span class="vf"><span data-i18n="ce.verify">Verify</span> ↗</span>
     </a>
+    <a class="cert gg rv" href="https://www.coursera.org/verify/professional-cert/50NDG3ITYOQU" target="_blank" rel="noopener">
+      <span class="seal" aria-hidden="true"><svg><use href="#i-award"/></svg></span>
+      <span class="ct">
+        <span class="lvl">Google · Coursera</span>
+        <b>Google AI Professional Certificate</b>
+        <span class="dt"><span data-i18n="ce.issued">Issued</span> Nov 2026 · 8 <span data-i18n="ce.ncourses">courses</span></span>
+      </span>
+      <span class="vf"><span data-i18n="ce.verify">Verify</span> ↗</span>
+    </a>
+    <a class="cert gg rv" href="https://www.coursera.org/verify/professional-cert/W7ATL9NEZQD9" target="_blank" rel="noopener">
+      <span class="seal" aria-hidden="true"><svg><use href="#i-award"/></svg></span>
+      <span class="ct">
+        <span class="lvl">Google · Coursera</span>
+        <b>Google IT Support Professional Certificate</b>
+        <span class="dt"><span data-i18n="ce.issued">Issued</span> Dec 2022 · 5 <span data-i18n="ce.ncourses">courses</span></span>
+      </span>
+      <span class="vf"><span data-i18n="ce.verify">Verify</span> ↗</span>
+    </a>
   </div>
   <h3 class="courses-h" data-i18n="ce.courses">Courses</h3>
   <ul class="courses">
@@ -706,6 +729,7 @@ footer a{color:#fff}
   "ce.valid": "berlaku sampai",
   "ce.verify": "Verifikasi",
   "ce.courses": "Kursus",
+  "ce.ncourses": "kursus",
   "nav.exp": "Pengalaman",
   "ex.eye": "Pengalaman",
   "ex.h": "Tempat saya bekerja",
